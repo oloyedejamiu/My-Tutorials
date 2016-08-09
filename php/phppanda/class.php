@@ -7,20 +7,27 @@ class Book{
     var $publisher;
     var $yearOfPublication;
     var $format = 'paperback';
+
+    //hello function 
+
+    function sayHello(){
+    	return 'Hello';
+
+    }
 }
 //first instanciate the book class
 $first = new Book ;
 
 //setting properties for book class
-$book->title = "General Biology";
-$book->author = "Abibio";
-$book->publisher = "Macmillan Books Ltd";
-$book->yearOfPublication = 1990;
+$first->title = "General Biology";
+$first->author = "Abibio";
+$first->publisher = "Macmillan Books Ltd";
+$first->yearOfPublication = 1990;
 
-echo $book->title 					. PHP_EOL;
-echo $book->author          		. PHP_EOL;
-echo $book->publisher       		. PHP_EOL;
-echo $book->yearOfPublication		. PHP_EOL;
+echo $first->title 					. PHP_EOL;
+echo $first->author          		. PHP_EOL;
+echo $first->publisher       		. PHP_EOL;
+echo $first->yearOfPublication		. PHP_EOL;
 
 
 //second instance of the book class
@@ -31,3 +38,11 @@ $second->title                = 'The Colour Of Magic';
 $second->author               = 'Terry Pratchett';
 $second->publisher            = 'Colin Smythe';
 $second->yearOfPublication    = 1983;
+
+//echo the value of format
+echo $first->format;
+echo $second->format;
+
+echo "<br />";
+//echo Hello function
+echo $first->sayHello();
