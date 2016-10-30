@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var mySecretNumber = prompt("Guess a Number between 1 to 5");
+			mySecretNumber = parseInt(mySecretNumber, 10);
+
+			switch(mySecretNumber){
+				case 1:
+				document.write("Your No is too low");
+				break;
+
+				case 2: 
+				document.write("Your No is low");
+				break;
+
+				case 3:
+				document.write("You gat it");
+				break;
+
+				case 4: 
+				document.write("Your no is high");
+				break;
+
+				case 5: 
+				document.write("Your no is too high");
+				break;
+
+				default:
+				document.write("Try again");
+			}
+	</script>
+</body>
+</html>
